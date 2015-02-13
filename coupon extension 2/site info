@@ -1,0 +1,27 @@
+sears
+http://www.sears.com/,  https://www.sears.com/shc/s/*
+
+text box: id="couponCode"   button: id="apply-coupon"
+place at id="coupons"		coupon-error
+
+
+
+walgreens
+https://www.walgreens.com/store/checkout/		https://www.walgreens.com/
+
+text box: id="ccode"   button id="applyCouponAction"
+place at id="order_summary_section"
+
+target
+http://www.target.com/		https://www-secure.target.com/checkout_esp_gw_billing?		
+id="promoCode"		id="fromButton"
+id="redeem-code"
+
+reebok
+https://demo.reebok.adidasgroup.demandware.net/on/demandware.store/Sites-Reebok-GB-Site/en_GB/Cart-Show
+
+id="couponinput"	id="dwfrm_cart_addCoupon"
+id="dwfrm_cart"
+
+ebay.com
+

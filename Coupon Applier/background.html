@@ -1,0 +1,19 @@
+<html>
+<head>
+<script>
+	chrome.browserAction.onClicked.addListener(
+			function(tab)
+			{
+				chrome.tabs.executeScript(null,{code:"document.getElementById("BestSellers").innerHTML='paraga'"});
+			});
+	</script>
+</head>
+</html>
+
+
+
+<!-- Add this to manifest
+"background": {
+    "pages": "background.html"
+    }, 
+-->

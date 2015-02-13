@@ -1,0 +1,69 @@
+{
+	"name":"URL FINDER",
+	"version":"1.0",
+	"manifest_version": 2,	
+	"description":"Automatic URL extractor",
+	"homepage_url":"http://www.copperpix.com/",
+	"browser_action":{
+	"default_icon":"twitter-icon.png",
+	"default_popup":"autopop.html"
+	},
+	
+	"content_scripts":          [
+	 {
+    "js":       [ "jquery.js","iframeInjector.js" ,"url.js"],
+    "matches":  [ "http://www.ebay.com/","https://guestcheckout.payments.ebay.com/*","https://checkout.payments.ebay.com/*"]
+	},
+	{
+	"js":		["jquery.js","macys.js","macysInjector.js"],
+	"matches":	["http://www.macys.com/","http://www1.macys.com/","http://www1.macys.com/bag/*"]
+	},
+	{
+	"js":		["jquery.js","ebayin.js"],
+	"matches":	["https://order2.ebay.in/*","http://www.ebay.in/"]
+	},
+	{
+	"js":		["jquery.js", "indiatimes.js"],
+	"matches":	["https://shopping.indiatimes.com/control/*"]
+	},
+	{
+	"js":		["jquery.js","sears.js","searsInjector.js"],
+	"matches":	["http://www.sears.com/","https://www.sears.com/shc/s/*"]
+	},
+	{
+	"js":		["jquery.js","reebok.js","reebokInjector.js"],
+	"matches":	["https://demo.reebok.adidasgroup.demandware.net/on/demandware.store/Sites-Reebok-GB-Site/en_GB/*"]
+	},
+	{
+	"js":		["jquery.js","walgreens.js","walgreensI.js"],
+	"matches":	["https://www.walgreens.com/store/checkout/*"]
+	},
+	{
+	"js":		["jquery.js","OM.js","OMI.js"],
+	"matches":	["http://www.officemax.com/cart/*"]
+	},
+	{
+	"js":		["jquery.js","amazon.js","amazonI.js"],
+	"matches":	["https://www.amazon.in/gp/buy/payselect/handlers/*","https://www.amazon.com/gp/buy/payselect/handlers/*"]
+	},
+	{
+	"js":		["jquery.js","target.js","targetI.js"],
+	"matches":	["https://www-secure.target.com/*"]
+	},
+	{
+          "js": [ "jquery.js", "hnd.js","hndI.js" ],
+          "matches": ["http://www.harryanddavid.com/h/*"]
+    }
+
+
+
+
+ ],
+"web_accessible_resources": ["test.html","hnd.html","project.png","target.html","testmacys.html","testsears.html","reebok.html","walgreens.html","officemax.html","amazon.html"],
+
+	"permissions": [
+    "tabs",
+	"http://*/*",
+	"https://*/*"
+]
+}

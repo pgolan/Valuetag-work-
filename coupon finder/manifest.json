@@ -1,0 +1,17 @@
+{
+	"name":"Coupon Finder",
+	"version":"1.0",
+	"manifest_version": 2,	
+	"description":"Automatic Coupon Finder",
+	"homepage_url":"http://www.twitter.com/",
+	"browser_action":{
+	"default_icon":"twitter-icon.png",
+	"popup":"finder.html"
+	},
+	"background":{
+		"scripts":["event.js"],
+		"persistent":false
+	},
+	"permissions":["<all_urls>"]
+
+}

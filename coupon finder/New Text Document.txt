@@ -1,0 +1,6 @@
+<head>
+<title>eccentic</title>
+</head>
+<body>
+EDZ is going to find the value of a comodity
+</body>

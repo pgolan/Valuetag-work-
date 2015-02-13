@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app="plunker">
+  <head>
+    <script src="angular.js"></script>
+    <script src="uiBootstrap.js"></script>
+    <script src="example.js"></script>
+    <link href="bootstrapMin.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div ng-controller="ProgressDemoCtrl">
+
+  
+   
+    <h3>Dynamic <button class="btn btn-sm btn-primary" type="button" ng-click="random()">Randomize</button></h3>
+    <progressbar max="max" value="dynamic"><span style="color:black; white-space:nowrap;">{{dynamic}} / {{max}}</span></progressbar>
+    
+    <small><em>No animation</em></small>
+    <progressbar animate="false" value="dynamic" type="success"><b>{{dynamic}}%</b></progressbar>
+
+    <small><em>Object (changes type based on value)</em></small>
+    <progressbar class="progress-striped active" value="dynamic" type="{{type}}">{{type}} <i ng-show="showWarning">!!! Watch out !!!</i></progressbar>
+    
+   
+</div>
+  </body>
+</html>

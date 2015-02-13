@@ -1,0 +1,22 @@
+{
+	"name":"URL FINDER",
+	"version":"1.0",
+	"manifest_version": 2,	
+	"description":"Coupon Code Applier",
+	"homepage_url":"http://www.facebook.com/",
+	"browser_action":{
+	"default_icon":"twitter-icon.png",
+	"default_popup":"autopop.html"
+	},
+	"content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["jquery.js", "myscript.js"]
+    }
+    ],
+	"permissions": [
+    "tabs",
+	"http://*/*",
+	"https://*/*"
+]
+}

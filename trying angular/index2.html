@@ -1,0 +1,42 @@
+<!doctype html>
+<html ng-app="plunker">
+  <head>
+    <script src="angular.js"></script>
+    <script src="uiBootstrap.js"></script>
+    <script src="example.js"></script>
+    <script src="example2.js"></script>
+    <link href="bootstrapMin.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div ng-controller="ModalDemoCtrl">
+    <script type="text/ng-template" id="myModalContent.html">
+        <div class="modal-header">
+            <h3 class="modal-title">Im a modal!</h3>
+        </div>
+        
+        <div class="modal-body">
+            <div ng-controller="ProgressDemoCtrl">
+	    		<h3>Dynamic <button class="btn btn-sm btn-primary" type="button" ng-click="random()">Randomize</button></h3>
+
+	    		
+    			<progressbar max="max" value="dynamic"><span style="color:black; white-space:nowrap;">{{dynamic}} / {{max}}</span></progressbar>
+
+    			<small><em>Object (changes type based on value)</em></small>
+    			<progressbar class="progress-striped active" value="dynamic" type="{{type}}">{{type}} <i ng-show="showWarning">!!! Watch out !!!</i></progressbar>
+    
+   
+			</div>
+		</div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" ng-click="ok()">OK</button>
+            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+        </div>
+    </script>
+
+    <button class="btn btn-default" ng-click="open()">Open me!</button>
+   
+    
+</div>
+  </body>
+</html>
